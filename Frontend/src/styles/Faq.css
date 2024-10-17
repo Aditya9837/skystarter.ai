@@ -1,0 +1,81 @@
+.faq-container {
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #5729FF; /* Brand color */
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 15px; /* Padding for better touch area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.faq-question-container:hover {
+  background-color: rgba(87, 41, 255, 0.1); /* Light hover effect */
+}
+
+.faq-question {
+  font-size: 1.2rem; /* Increased font size */
+  color: #333;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.faq-icon {
+  font-size: 1.5rem; /* Increased icon size */
+  color: #666;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1rem; /* Font size adjustment */
+  color: #555;
+  line-height: 1.5; /* Increased line height */
+  padding: 0 15px; /* Padding for better layout */
+}
+
+.faq-divider {
+  margin-top: 20px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .faq-heading {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .faq-question {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+
+  .faq-answer {
+    font-size: 0.9rem; /* Smaller answer text */
+  }
+
+  .faq-icon {
+    font-size: 1.2rem; /* Smaller icon size */
+  }
+}

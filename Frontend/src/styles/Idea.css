@@ -1,0 +1,33 @@
+/* Style for the card container */
+.card {
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px; /* Inner spacing */
+    max-width: 300px; /* Set max width for the card */
+    margin: 20px; /* Add space around the card */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Style for the icon and heading */
+  .card h1 {
+    display: flex; /* Flexbox to align icon and text */
+    align-items: center; /* Vertically center the icon and heading */
+    font-size: 24px; /* Adjust heading size */
+    margin: 0 0 10px 0; /* Margin to space it from paragraph */
+    font-weight: bold;
+  }
+  
+  /* Icon styling */
+  .card-icon {
+    font-size: 30px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and heading */
+  }
+  
+  /* Paragraph styling */
+  .card p {
+    font-size: 16px; /* Adjust paragraph size */
+    color: #666; /* Dark grey text for paragraph */
+    line-height: 1.5; /* Spacing between lines */
+  }
+  

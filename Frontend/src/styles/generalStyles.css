@@ -1,0 +1,14 @@
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.blue-btn{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #271A62;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }

@@ -1,0 +1,64 @@
+.pricing-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btn-container {
+    display: inline-flex;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #F1ECFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-btn.active {
+    background-color: #2C3A9B;
+    color: white;
+    border: none;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .plans-container {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  .plans-container.fade-in {
+    opacity: 1;
+  }
+  
+  .plan-details {
+    margin-top: 20px;
+  }
+  
+  .plan-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .plan-details p {
+    font-size: 1.2rem;
+  }
+  

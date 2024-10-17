@@ -1,0 +1,134 @@
+#home-screen {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Hero section */
+#hero-section {
+margin-top: 100px;
+text-align: center;
+width: 100vw;
+padding: 0 20px;
+}
+
+.h1 {
+  font-family: Larsseit-ExtraBold;
+font-size: 4rem;
+color: black;
+line-height: 1.2;
+}
+#hero-section p{
+  margin-top: 10px;
+  font-size: 1.3rem;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: Larsseit;
+}
+
+.gradient-text {
+background: linear-gradient(90deg, #8BCAFD, #724BFB);
+background-clip: text;
+color: transparent;
+font-family: Larsseit-ExtraBold;
+}
+
+.gradient-btn {
+  margin-top: 20px;
+padding: 10px 20px;
+font-size: 1.2em;
+font-weight: bold;
+background: linear-gradient(45deg, #9F68FD, #6457FE,#344AFF);
+color: #ffffffd4;
+border: none;
+transition: all 0.3s ease;
+cursor: pointer;
+border-radius: 20px;
+}
+
+.gradient-btn:hover {
+color: #000;
+}
+
+#hero-image-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px
+  
+}
+
+#hero-partners {
+text-align: center;
+}
+.h2{
+  
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-family: Larsseit;
+    
+}
+
+#brands-image {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+#brands-image img {
+max-width: 150px;
+margin: 10px;
+}
+
+#plan-container{
+  margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+#plan-container-h1 h2{
+  font-size: 3rem;
+  color: black;
+  line-height: 1.2;
+  font-family: Larsseit-Bold;
+  
+}
+.gradient-text-plan-component{
+  background: linear-gradient(90deg, #2C3A9B, #C81EAB,#F33F60);
+  background-clip: text;
+  color: transparent;
+  font-family: Larsseit-Bold;
+  font-size: 3rem;
+}
+
+#plan-component{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width:768px) {
+
+  #hero-image-container{
+  width: 100vw;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image{
+  margin: 10px 20px;
+}
+#plan-component{
+  display: flex;
+  flex-direction: column;
+}
+}

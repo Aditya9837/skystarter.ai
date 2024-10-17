@@ -1,0 +1,15 @@
+/* styles.css */
+.logout-button {
+    background-color: #ff4c4c; /* Red background */
+    color: black; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for better size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .logout-button:hover {
+    background-color: #e63939; /* Darker red on hover */
+  }
+  

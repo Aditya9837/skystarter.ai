@@ -1,0 +1,198 @@
+/* General container for the prompt section */
+.prompt-container {
+
+  padding: 20px;
+  max-width: 1200px;
+  margin: 50px auto; /* Center the container */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.prompt-header {
+  text-align: center;
+}
+
+.prompt-header h1 {
+  font-size: 4rem; /* Increased size for better emphasis */
+  margin-bottom: 10px;
+  font-family: Larsseit-ExtraBold;
+  color: #2C3A9B; /* Match theme color */
+
+}
+
+.prompt-header p {
+  font-size: 1.3rem;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: Larsseit;
+  margin-bottom: 20px;
+}
+
+/* Section for the cards */
+.prompt-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  gap: 20px;
+  border: 1.5px solid;
+  border-image: linear-gradient(45deg, #2C3A9B, #3EEFDA) 1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styling for each card */
+.prompt-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-left: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.prompt-card:first-child {
+  border-left: none;
+}
+
+/* Icon styling - Positioned to the left of h1 and p */
+.prompt-card-icon {
+  font-size: 28px; /* Larger icons */
+  margin-right: 10px;
+  color: #2C3A9B;
+  flex-shrink: 0;
+}
+
+/* Use flexbox to align the content */
+.prompt-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Heading and paragraph alignment */
+.prompt-card-content h1 {
+  font-size: 1.5rem; /* Increase heading size */
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.prompt-card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Hover effect for prompt cards */
+.prompt-card:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Button styling */
+.generate-button {
+  padding: 12px 25px;
+  background-color: #2C3A9B;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: #1d2879;
+  transform: translateY(-3px);
+}
+
+/* Container for the "My Creations" section */
+.my-creations-container {
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header styling for "My Creations" */
+.my-creations-container h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #2C3A9B;
+  font-family: Larsseit-Bold;
+}
+
+/* Grid container for images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px; /* Set a consistent 10px gap */
+  grid-auto-rows: 250px; /* Enforce a consistent row height for all images */
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+/* Styling for individual images */
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the grid item without distorting */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.image-grid img:hover {
+  transform: scale(1.01); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ 
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .prompt-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .prompt-card {
+    flex: 1;
+    margin-bottom: 10px;
+  }
+
+  .my-creations-container h1 {
+    font-size: 2rem;
+  }
+  .prompt-container {
+    margin-top: 70px;
+  }
+
+  .prompt-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .generate-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .prompt-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .prompt-header p {
+    font-size: 0.9rem;
+  }
+}

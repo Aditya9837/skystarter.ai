@@ -1,0 +1,91 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width for better layout */
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #5729FF; /* Change color on hover */
+}
+
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.nav-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  background: linear-gradient(135deg, #9f86f8 0%, #8BCAFD 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  padding: 2rem;
+  transform: translateX(-100%); /* Off-screen initially */
+  transition: transform 0.4s ease-in-out;
+  z-index: 100;
+}
+
+.nav-menu.open {
+  transform: translateX(0); /* Slide in when open */
+  display: flex; /* Show the menu */
+}
+
+.login-btn {
+  background-color: #200581;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #5729FF;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .navbar-left, .navbar-right {
+    display: none; /* Hide left/right nav on mobile */
+  }
+}

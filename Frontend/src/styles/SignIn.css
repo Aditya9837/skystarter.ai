@@ -1,0 +1,191 @@
+/* Ensure the container takes up the full height of the viewport */
+.signin-container {
+    display: flex;
+    flex-direction: row; /* Row layout for larger screens */
+    min-height: 100vh;
+    overflow: hidden; /* Prevent overflow scrolling */
+    background: url('https://images.unsplash.com/photo-1726121678240-9126d5017990?q=80&w=1779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+        no-repeat center center/cover;
+    box-sizing: border-box; /* Ensure padding and borders are included */
+}
+/* Left side */
+.left-side {
+    flex: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Right side */
+.right-side {
+    flex: 1;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 400px; /* Ensure card width */
+    margin: 40px; /* Add margin to avoid overlap */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    position: relative;
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+/* Card styling */
+.right-side h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.right-side label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.right-side input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.right-side button {
+    background-color: #2C3A9B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.right-side p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.right-side a {
+    color: #2C3A9B;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Social buttons styling */
+.right-side .social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+/* Google icon styling */
+.google-icon, .facebook-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Google icon specific styling */
+.google-icon {
+    background: linear-gradient(to right, #4285F4, #34A853, #FFBF00, #FF5733);
+}
+
+/* Facebook icon specific styling */
+.facebook-icon {
+    background-color: #4267B2;
+    color: #fff;
+}
+
+/* For SVG icons inside the social buttons */
+.google-icon svg, .facebook-icon svg {
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+
+
+
+
+/* Base styling remains as defined */
+
+/* Responsive adjustments for tablets */
+@media only screen and (max-width: 768px) {
+    .signin-container {
+        flex-direction: column; /* Stack the columns vertically */
+    }
+
+    .left-side, .right-side {
+       
+        width: 100%; /* Full width for both sections */
+        padding: 20px;
+    }
+
+    .right-side {
+        max-width: 90%; /* Ensure the card doesn't take full width */
+        margin: 20px auto; /* Center the card */
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media only screen and (max-width: 480px) {
+    .signin-container {
+       
+    }
+
+    .left-side {
+        padding: 15px; /* Reduce padding on smaller screens */
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .right-side {
+        padding: 20px;
+        max-width: 90%; /* Make the card fit within mobile screen */
+        margin: 20px auto;
+    }
+
+    .right-side h1 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .right-side input {
+        padding: 8px; /* Reduce padding for inputs */
+        font-size: 0.9rem;
+    }
+
+    .right-side button {
+        padding: 8px 16px; /* Smaller button */
+        font-size: 0.9rem;
+    }
+
+    .social-buttons {
+        gap: 10px; /* Reduce gap between social icons */
+    }
+
+    .google-icon, .facebook-icon {
+        width: 35px; /* Smaller icons */
+        height: 35px;
+    }
+
+    /* Google and Facebook icons specific styling */
+    .google-icon svg, .facebook-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}

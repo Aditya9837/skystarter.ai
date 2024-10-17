@@ -1,0 +1,94 @@
+/* Hero Section Container */
+.hero-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  }
+  
+  /* Background Images Container */
+  .background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Wrap the images so they do not overlap */
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  
+  .background-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px; /* Add spacing between the images */
+    transition: transform 0.4s ease;
+    border-radius: 15px;
+  }
+  
+  /* Content Overlay */
+  .content-overlay {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
+    text-align: center;
+    width: 800px;
+    min-height: 300px;
+
+  }
+  
+  .content-overlay h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .content-overlay input {
+    padding: 12px 20px;
+    width: 80%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .content-overlay input:focus {
+    border-color: #555;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Services Section in Overlay */
+  .services {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    overflow-y: hidden;
+  }
+  
+  .services img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+  }
+  
+  .services img:hover {
+    transform: scale(1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
